@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Data Siswa</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="css/Style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Masukkan Data Siswa</h2>
+        
+    <form>
+      <div class="form-group">
+        <label>Gol Darah</label>
+        <input type="text" placeholder="A, B, AB, O" />
+      </div>
+
+      <div class="form-group">
+        <label>Tinggi Badan</label>
+        <input type="text" placeholder="168 cm" />
+      </div>
+
+      <div class="form-group">
+        <label>Berat Badan</label>
+        <input type="text" placeholder="65 kg" />
+      </div>
+
+      <div class="form-group">
+        <label>Asal Sekolah</label>
+        <input type="text" placeholder="SDN 69 MOJOKERTO" />
+      </div>
+
+      <div class="form-group">
+        <label>Jurusan</label>
+        <input type="text" placeholder="RPL, DKV, BD, TKJ, dll" />
+      </div>
+
+      <div class="form-group">
+        <label>Hobi</label>
+        <input type="text" placeholder="balapan, mancing perkara, dll" />
+      </div>
+
+      <div class="form-group">
+        <label>Cita-Cita</label>
+        <input type="text" placeholder="Presiden, Polisi, dll" />
+      </div>
+
+      <div class="form-group">
+        <label>Anak Ke</label>
+        <input type="text" placeholder="1, 2, 3" />
+      </div>
+
+      <div class="form-group">
+        <label>Kewarganegaraan</label>
+        <input type="text" placeholder="Indonesia, Jepang, dll" />
+      </div>
+
+      <div class="form-group">
+        <label>Nama Ayah</label>
+        <input type="text" placeholder="Nama Ayah" />
+      </div>
+
+      <div class="form-group">
+        <label>Pekerjaan Ayah</label>
+        <input type="text" placeholder="Pekerjaan Ayah" />
+      </div>
+      
+            <div class="form-group">
+        <label>Penghasilan Ayah</label>
+        <input type="text" placeholder="Penghasilan Ayah" />
+      </div>
+      
+            <div class="form-group">
+        <label>Nama Ibu</label>
+        <input type="text" placeholder="Nama Ibu" />
+      </div>
+
+
+            <div class="form-group">
+        <label>Pekerjaan Ibu</label>
+        <input type="text" placeholder="Pekerjaan Ibu" />
+      </div>
+      
+            <div class="form-group">
+        <label>Penghasilan Ibu</label>
+        <input type="text" placeholder="Penghasilan Ibu" />
+      </div>
+
+              <button type="submit" id="submit" class="btn">Kirim</button>
+
+    </form>
+
+      <script>
+          document.getElementById("submit").addEventListener("click", function(e) {
+    e.preventDefault(); // stop form from submitting (just in case)
+
+    Swal.fire({
+      title: "Good job!",
+      text: "You clicked the button!",
+      icon: "success",
+      confirmButtonText: "Continue",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Redirect after clicking OK
+        window.location.href = "https://www.instagram.com";
+      }
+    });
+  });
+      </script>
